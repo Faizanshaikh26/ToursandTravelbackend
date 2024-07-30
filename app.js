@@ -18,7 +18,9 @@ app.get("/", (req, res) => {
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://toursand-travels.vercel.app/"],
+    origin: ["http://localhost:5173",
+      process.env.CLIENT_URL
+    ],
     methods: ["GET", "POST", " DELETE", " PUT"],
   })
 ); // Enable CORS for all requests
