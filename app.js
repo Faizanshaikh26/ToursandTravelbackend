@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 9000;
-const cors=require("cors");
+const cors = require("cors");
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => console.log("Db connection established"))
@@ -16,10 +16,12 @@ app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
 
-app.use(cors({
-  origin:"http://localhost:5173",
-  methods:["GET","POST"," DELETE"," PUT"],
-})); // Enable CORS for all requests
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://toursand-travels.vercel.app/"],
+    methods: ["GET", "POST", " DELETE", " PUT"],
+  })
+); // Enable CORS for all requests
 
 app.use(express.json());
 app.post("/signup", userController.signup);
