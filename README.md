@@ -114,5 +114,5 @@
 <h2 id="contact">Contact</h2>
 <p>For questions or feedback, contact the maintainers:</p>
 <ul>
-    <li><strong>Faizan</strong> - <a href="https://github.com/Faizanshaikh26">@Faizanshaikh26</a> - youremail@example.com</li>
+    <li><strong>Faizan</strong> - <a href="https://github.com/Faizanshaikh26">@Faizanshaikh26</a> - Faizansheikh8209@gmail.com</li>
 </ul>
